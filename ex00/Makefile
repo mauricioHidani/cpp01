@@ -6,7 +6,7 @@
 #    By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/06 09:06:28 by mhidani           #+#    #+#              #
-#    Updated: 2026/03/06 10:28:01 by mhidani          ###   ########.fr        #
+#    Updated: 2026/03/06 11:06:38 by mhidani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ fclean: clean
 re: fclean all
 
 banner:
-	@echo "🛸 $(LOCAL) - $(NAME) $(VERSION) [CPP-01 Exercise 00]"
+	@echo "🛸 $(LOCAL) - Brainz $(VERSION) [CPP-01 Exercise 00]"
 	@echo "$(AUTHOR) $(SINCE)"
 
 $(NAME): $(OBJS)
