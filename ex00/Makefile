@@ -6,7 +6,7 @@
 #    By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/06 09:06:28 by mhidani           #+#    #+#              #
-#    Updated: 2026/03/06 10:25:30 by mhidani          ###   ########.fr        #
+#    Updated: 2026/03/06 10:28:01 by mhidani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,16 +43,15 @@ fclean: clean
 	@$(RM) $(RMFLAGS) $(NAME)
 	@echo "$(NAME): is cleaned  🧹"
 
-re: flcean all
+re: fclean all
 
 banner:
 	@echo "🛸 $(LOCAL) - $(NAME) $(VERSION) [CPP-01 Exercise 00]"
 	@echo "$(AUTHOR) $(SINCE)"
-	@echo ""
 
 $(NAME): $(OBJS)
 	@$(CPP) $(CPPFLAGS) $(OBJS) $(CPPINCS) -o $@
-	@echo "$(NAME): is done 🛸"
+	@echo "$(NAME): is done 🤙"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@$(MKD) $(MKDFLAGS) $(dir $@)
