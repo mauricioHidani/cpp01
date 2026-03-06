@@ -6,11 +6,11 @@
 #    By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/06 09:06:28 by mhidani           #+#    #+#              #
-#    Updated: 2026/03/06 11:06:38 by mhidani          ###   ########.fr        #
+#    Updated: 2026/03/06 11:30:09 by mhidani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= brainz
+NAME		= zombie
 SINCE		= 2026.03.06
 AUTHOR		= mhidani
 LOCAL		= 42SP
