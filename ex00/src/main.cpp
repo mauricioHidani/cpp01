@@ -6,7 +6,7 @@
 /*   By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/06 09:23:09 by mhidani           #+#    #+#             */
-/*   Updated: 2026/03/06 10:13:02 by mhidani          ###   ########.fr       */
+/*   Updated: 2026/03/06 10:29:32 by mhidani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(void)
 {
-	Zombie	*heapZombie = newZombie("heapZombie ✌️");
+	Zombie	*heapZombie = newZombie("heapZombie ✌️ ");
 	randomChump("stackZombie 🤙");
 
 	heapZombie->announce();
