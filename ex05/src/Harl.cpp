@@ -6,7 +6,7 @@
 /*   By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/08 17:26:22 by mhidani           #+#    #+#             */
-/*   Updated: 2026/03/08 18:00:04 by mhidani          ###   ########.fr       */
+/*   Updated: 2026/03/08 18:52:27 by mhidani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,34 @@
 
 Harl::Harl(void)
 {
-	std::cout << "Harl is created" << std::endl;
 }
 
 Harl::~Harl(void)
 {
-	std::cout << "Harl destroyed" << std::endl;
 }
 
 void	Harl::debug(void)
 {
-	std::cout << "Eu amo ter bacon extra para o meu hambúrguer ";
-	std::cout << "7XL-duplo-queijo-triplo-picles-ketchup-especial. Eu ";
-	std::cout << "realmente amo!" << std::endl;
+	std::cout << "I love having extra bacon on my hamburger.";
+	std::cout << std::endl;
 }
 
 void	Harl::info(void)
 {
-	std::cout << "Eu não acredito que adicionar bacon extra custa mais ";
-	std::cout << "dinheiro. Vocês não colocaram bacon suficiente no meu ";
-	std::cout << "hambúrguer! Se vocês tivessem colocado, eu não estaria ";
-	std::cout << "pedindo por mais!" << std::endl;
+	std::cout << "You didn't put enough bacon on my burger!";
+	std::cout << std::endl;
 }
 
 void	Harl::warning(void)
 {
-	std::cout << "Eu acho que mereço ter bacon extra de graça. Eu venho aqui ";
-	std::cout << "há anos, enquanto você começou a trabalhar aqui apenas no ";
-	std::cout << "mês passado." << std::endl;
+	std::cout << "I think I deserve free extra bacon.";
+	std::cout << std::endl;
 }
 
 void	Harl::error(void)
 {
-	std::cout << "Isto é inaceitável! Eu quero falar com o gerente ";
-	std::cout << "agora." << std::endl;
+	std::cout << "This is unacceptable! I want to speak to the manager";
+	std::cout << std::endl;
 }
 
 void	Harl::complain(std::string level)
