@@ -6,7 +6,7 @@
 /*   By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/08 02:46:54 by mhidani           #+#    #+#             */
-/*   Updated: 2026/03/08 17:10:22 by mhidani          ###   ########.fr       */
+/*   Updated: 2026/03/08 17:20:14 by mhidani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,11 @@ std::string	rep::readFile(const std::string &path)
 void	rep::writeFile(const std::string &path, const std::string &content)
 {
 	std::ofstream	fileStream; // Output File STREAM
-	std::string		newPath;
 
 	if (path.empty())
 		throw std::runtime_error("File path is empty");
 	
-	newPath = putTargetInEnd(path, ".replace");
-	fileStream.open(newPath.c_str(), std::ios::out | std::ios::trunc);
+	fileStream.open(path.c_str(), std::ios::out | std::ios::trunc);
 	if (!fileStream.is_open())
 		throw std::runtime_error("Path not found or no permissions");
 	
@@ -82,6 +80,7 @@ void	rep::replace(const std::string &path, const std::string &target,
 {
 	std::size_t	posFind;
 	std::string	content;
+	std::string	newPath;
 
 	if (target.empty())
 		throw std::runtime_error("Target is empty");
@@ -93,5 +92,7 @@ void	rep::replace(const std::string &path, const std::string &target,
 		content.insert(posFind, source);
 		posFind += source.length();
 	}
-	writeFile(path, content);
+	newPath = putTargetInEnd(path, ".replace");
+	writeFile(newPath, content);
+	lgg::print(LOG_INFO, "File is created " + newPath);
 }
