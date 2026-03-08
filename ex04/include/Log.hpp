@@ -6,7 +6,7 @@
 /*   By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/08 13:38:14 by mhidani           #+#    #+#             */
-/*   Updated: 2026/03/08 17:08:53 by mhidani          ###   ########.fr       */
+/*   Updated: 2026/03/08 17:20:14 by mhidani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # define LOG_WARN "warning"
 # define LOG_ERRO "error"
 
-namespace log
+namespace lgg
 {
 	std::string	getTimestamp(void);
 	void		print(const std::string &type, const std::string &message);
