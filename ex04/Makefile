@@ -6,7 +6,7 @@
 #    By: mhidani <mhidani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/06 12:44:03 by mhidani           #+#    #+#              #
-#    Updated: 2026/03/08 17:10:31 by mhidani          ###   ########.fr        #
+#    Updated: 2026/03/08 18:08:17 by mhidani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ fclean: clean
 re: fclean all
 
 banner:
-	@echo "🛸 $(LOCAL) - Sed is for losers $(VERSION) [CPP-01 Exercise 03]"
+	@echo "🛸 $(LOCAL) - Sed is for losers $(VERSION) [CPP-01 Exercise 04]"
 	@echo "$(AUTHOR) $(SINCE)"
 
 $(NAME): $(OBJS)
