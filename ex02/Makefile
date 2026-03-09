@@ -57,4 +57,4 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@$(MKD) $(MKDFLAGS) $(dir $@)
 	@$(CPP) $(CPPFLAGS) $(CPPINCS) -c $< -o $@
 
-.PHONE: clean fclean all re banner
+.PHONY: clean fclean all re banner
